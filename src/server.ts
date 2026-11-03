@@ -1,6 +1,7 @@
 import express, { NextFunction, Request, Response } from 'express';
 import authRouter from './routes/auth.js';
 import userRouter from './routes/users.js';
+import { db } from '../db.js';
 
 const app = express();
 app.use(express.json());
@@ -21,3 +22,5 @@ app.use((err: unknown, req: Request, res: Response, next: NextFunction) => {
 app.listen(3000, () => {
 	console.log('Server läuft: http://localhost:3000');
 });
+
+export default db
