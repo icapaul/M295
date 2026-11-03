@@ -1,5 +1,5 @@
-import tseslint from 'typescript-eslint'
-import prettier from 'eslint-plugin-prettier'
+import tseslint from 'typescript-eslint';
+import prettier from 'eslint-plugin-prettier';
 
 export default [
   { ignores: ['dist/**', 'node_modules/**'] },
@@ -8,4 +8,4 @@ export default [
     plugins: { prettier },
     rules: { 'prettier/prettier': 'warn' },
   },
-]
+];

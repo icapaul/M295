@@ -1,6 +1,6 @@
 export function bestelleKaffee(callback: () => void) {
-  console.log('Barista macht Kaffee...')
+  console.log('Barista macht Kaffee...');
   setTimeout(() => {
-    callback()
-  }, 1000)
+    callback();
+  }, 1000);
 }
