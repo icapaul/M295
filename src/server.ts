@@ -1,6 +1,6 @@
-import { bestelleKaffee } from "./callback"
+import { bestelleKaffee } from './callback'
 
 // Callbacks und Promises
-bestelleKaffee(()=>{
-    console.log("Danke für den Kaffee.")
+bestelleKaffee(() => {
+  console.log('Danke für den Kaffee.')
 })
