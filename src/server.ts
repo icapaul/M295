@@ -23,4 +23,4 @@ app.listen(3000, () => {
 	console.log('Server läuft: http://localhost:3000');
 });
 
-export default db
+export default db;
