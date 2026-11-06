@@ -2,8 +2,10 @@ import express, { NextFunction, Request, Response } from 'express';
 import authRouter from './routes/auth.js';
 import userRouter from './routes/users.js';
 import { db } from '../db.js';
+import { logger } from './logger.js';
 
 const app = express();
+app.use(logger);
 app.use(express.json());
 
 app.use('/', authRouter, userRouter); // Routen aus auth.ts einhängen
